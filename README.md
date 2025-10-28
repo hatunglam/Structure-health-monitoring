@@ -57,8 +57,8 @@ This repository contains scripts, notebooks, and reports for data analysis, spec
 |-----------|--------------|
 | **data1_analysis.ipynb** | Extracts and visualizes sensor pair configurations, transmitter/receiver geometry, and defect positions from the raw `.mat` dataset. Includes sensor network mapping and structural layout visualization. |
 | **pair3_analysis.ipynb** | Performs detailed signal inspection for sensor pair 3, including time-series visualization, signal subtraction, and defect-related comparisons. Also handles date conversion and defect event plotting. |
-| **Spectral_analysis.ipynb** | Converts time-domain waveforms into the frequency domain using FFT. Applies Random Forest classification to detect defects based on spectral differences between pristine and defective signals. Achieved ~95% accuracy. |
-| **Spectral_analysis_decisiontree.ipynb** | Extends spectral analysis with a Decision Tree approach for multi-class defect type identification (e.g., “3.5mm through hole,” “7mm through hole”). Visualizes FFT spectra for multiple damage states. |
+| **Spectral_analysis.ipynb** | Converts time-domain waveforms into the frequency domain using FFT. Applies Random Forest classification to detect defects based on spectral differences between pristine and defective signals.|
+| **Spectral_analysis_decisiontree.ipynb** | Extends spectral analysis with a Decision Tree approach for multi-class defect type identification. Visualizes FFT spectra for multiple damage states. |
 | **classifier.ipynb** | Implements LSTM classifiers to distinguish pristine vs defect states. |
 | **lstm_pair3.ipynb** | LSTM model for sequential prediction on time-series data from sensor pair 3. The model reconstructs normal signals and detects anomalies through increased prediction errors (MSE spikes indicate damage). |
 | **weather.ipynb** | Analyzes environmental factors such as temperature and humidity to study their influence on ultrasonic signal variations. Provides insight into noise and drift reduction strategies. |
