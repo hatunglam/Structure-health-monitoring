@@ -45,7 +45,7 @@ This dataset is sufficient to:
 - Demonstrate the **robustness** of developed subtraction/improvement techniques across multiple sensor pairs.
 
 ---
-## 📂 Repository Contents
+## Repository Contents
 This repository contains scripts, notebooks, and reports for data analysis, spectral modeling, classification, and forecasting tasks.
 
 ### Reports
