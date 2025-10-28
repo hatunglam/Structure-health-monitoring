@@ -45,18 +45,22 @@ This dataset is sufficient to:
 - Demonstrate the **robustness** of developed subtraction/improvement techniques across multiple sensor pairs.
 
 ---
+## 📂 Repository Contents
+This repository contains scripts, notebooks, and reports for data analysis, spectral modeling, classification, and forecasting tasks.
 
-## Initial Work Plan
+### Reports
+- **Group_report.pdf** – Collaborative group submission outlining overall methodology and findings.  
+- **Individual_report.pdf** – Personal report documenting independent contributions and technical analyses.  
 
-Suggested core tasks include:
-
-1. **Familiarization** with the problem and current state of the art.  
-2. **Demonstration of defect detection** through subtraction in a simple case.  
-3. **Image generation** of the structural condition from recorded data.  
-4. **Selection of a data-driven approach** to improve subtraction performance.  
-5. **Performance evaluation** of the proposed method.  
-6. **Extension** to test generalizability and transferability to other systems.
-
-> This is a suggested outline — the exact research path is at the student’s discretion.
+### Core Notebooks
+| Notebook | Description |
+|-----------|--------------|
+| **data1_analysis.ipynb** | Extracts and visualizes sensor pair configurations, transmitter/receiver geometry, and defect positions from the raw `.mat` dataset. Includes sensor network mapping and structural layout visualization. |
+| **pair3_analysis.ipynb** | Performs detailed signal inspection for sensor pair 3, including time-series visualization, signal subtraction, and defect-related comparisons. Also handles date conversion and defect event plotting. |
+| **Spectral_analysis.ipynb** | Converts time-domain waveforms into the frequency domain using FFT. Applies Random Forest classification to detect defects based on spectral differences between pristine and defective signals. Achieved ~95% accuracy. |
+| **Spectral_analysis_decisiontree.ipynb** | Extends spectral analysis with a Decision Tree approach for multi-class defect type identification (e.g., “3.5mm through hole,” “7mm through hole”). Visualizes FFT spectra for multiple damage states. |
+| **classifier.ipynb** | Implements LSTM and Random Forest classifiers for binary defect detection. Integrates deep learning (Keras) with sensor signal classification to distinguish pristine vs defect states. |
+| **lstm_pair3.ipynb** | LSTM model for sequential prediction on time-series data from sensor pair 3. The model reconstructs normal signals and detects anomalies through increased prediction errors (MSE spikes indicate damage). |
+| **weather.ipynb** | Analyzes environmental factors such as temperature and humidity to study their influence on ultrasonic signal variations. Provides insight into noise and drift reduction strategies. |
 
 ---
